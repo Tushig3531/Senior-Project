@@ -1,24 +1,26 @@
 //
 //  ContentView.swift
+//  BaseballApp
 //
-//
-//  Created by Tushig Erdenebulgan on 10/1/25.
+//  Created by Tushig Erdenebulgan on 10/8/25.
 //
 import SwiftUI
+
 struct ContentView: View {
-    @State private var index=0
-    @State private var opacity: Double=1.0
-    let texts = ["Hello World", "Team Miracle", "Tushig, Durah, Brody"]
+    @State private var index = 0
+    @State private var opacity: Double = 1.0
+    private let texts = ["Hello World", "Team Miracle", "Tushig, Durah, Brody"]
+
     var body: some View {
-        ZStack{
+        ZStack {
             LinearGradient(
                 colors: [Color.blue, Color.purple],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
             .ignoresSafeArea()
-            
-            VStack{
+
+            VStack {
                 Spacer()
                 Text(texts[index])
                     .font(.system(size: 36, weight: .bold, design: .rounded))
@@ -30,13 +32,10 @@ struct ContentView: View {
                     .opacity(opacity)
                     .animation(.easeInOut(duration: 0.5), value: opacity)
                     .onTapGesture {
-                            withAnimation {
-                            opacity = 0.0
-                            }
-                        DispatchQueue.main.asyncAfter(deadline: .now()+0.5){
-                            index=(index+1)%texts.count
-                            withAnimation{(opacity=1.0)
-                            }
+                        withAnimation { opacity = 0.0 }
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                            index = (index + 1) % texts.count
+                            withAnimation { opacity = 1.0 }
                         }
                     }
                 Spacer()
@@ -44,9 +43,5 @@ struct ContentView: View {
         }
     }
 }
-#Preview{
-    ContentView()
-}
 
-
-
+#Preview { ContentView() }

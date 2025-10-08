@@ -1,28 +1,22 @@
 //
-//  HelloWorld.swift
+//  BaseballAppApp.swift
+//  BaseballApp
 //
+//  Created by Tushig Erdenebulgan on 10/8/25.
 //
-//  Created by Tushig Erdenebulgan on 10/1/25.
-//
+
 import SwiftUI
-import SwiftData
+import FirebaseCore
 
 @main
-struct BaseballAppApp: App{
-    var sharedContainer: ModelContainer = {
-        let projectURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("team_miracle_data.store")
-
-        let config = ModelConfiguration(url: projectURL)
-
-        return try! ModelContainer(for: User.self, configurations: config)
-        }()
-        
-        var body: some Scene {
-            WindowGroup {
-                LoginScreen()
-                    .modelContainer(sharedContainer)
-            }
-        }
+struct BaseballAppApp: App {
+    init() {
+        FirebaseApp.configure()
     }
 
+    var body: some Scene {
+        WindowGroup {
+            LoginScreen()
+        }
+    }
+}
