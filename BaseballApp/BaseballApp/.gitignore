@@ -1,0 +1,14 @@
+
+DerivedData/
+xcuserdata/
+*.xcuserstate
+
+# Swift Package Manager
+.build/
+
+# CocoaPods
+Pods/
+*.xcworkspace
+
+# Ignore temporary
+*.DS_Store
