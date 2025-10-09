@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyC_fJZwzDnN5C_kWdUD1FIWK2-vC3iliIo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>882780818555</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.miracle.BaseballApp</string>
+	<key>PROJECT_ID</key>
+	<string>team-miracle-0531</string>
+	<key>STORAGE_BUCKET</key>
+	<string>team-miracle-0531.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:882780818555:ios:e8a9a8b2041f9a05d5a6de</string>
+</dict>
+</plist>
