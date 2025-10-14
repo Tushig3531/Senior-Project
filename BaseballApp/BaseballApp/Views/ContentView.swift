@@ -13,12 +13,8 @@ struct ContentView: View {
 
     var body: some View {
         ZStack {
-            LinearGradient(
-                colors: [Color.blue, Color.purple],
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-            .ignoresSafeArea()
+            LinearGradient(colors: [.blue, .purple], startPoint: .topLeading, endPoint: .bottomTrailing)
+                .ignoresSafeArea()
 
             VStack {
                 Spacer()
@@ -30,7 +26,6 @@ struct ContentView: View {
                     .cornerRadius(12)
                     .shadow(radius: 10)
                     .opacity(opacity)
-                    .animation(.easeInOut(duration: 0.5), value: opacity)
                     .onTapGesture {
                         withAnimation { opacity = 0.0 }
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
@@ -43,5 +38,3 @@ struct ContentView: View {
         }
     }
 }
-
-#Preview { ContentView() }

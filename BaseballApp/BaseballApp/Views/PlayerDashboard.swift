@@ -7,14 +7,12 @@
 import SwiftUI
 
 struct PlayerDashboard: View {
-    let user: UserModel
     var body: some View {
-        NavigationStack {
-            VStack(spacing: 12) {
-                Text("Player Dashboard").font(.largeTitle).bold()
-                Text("Welcome, \(user.name)")
-                Spacer()
-            }.padding().navigationTitle("Player")
+        VStack {
+            Text("Player Dashboard").font(.largeTitle).bold()
+            Spacer()
         }
+        .padding()
+        .navigationTitle("Player")
     }
 }

@@ -7,16 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8105CAAE2E963B00000A0917 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8105CAAD2E963B00000A0917 /* FirebaseCore */; };
-		8105CAB02E963B07000A0917 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8105CAAF2E963B07000A0917 /* FirebaseAuth */; };
-		8105CAB22E963B0E000A0917 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8105CAB12E963B0E000A0917 /* FirebaseFirestore */; };
+		812050432E9E17F9005B916E /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 812050422E9E17F9005B916E /* SQLite */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8120507E2E9E57CE005B916E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 817F70E92E8E32F8001CF782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 817F70F02E8E32F8001CF782;
+			remoteInfo = BaseballApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		8120507A2E9E57CE005B916E /* BaseballAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseballAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		817F70F12E8E32F8001CF782 /* BaseballApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseballApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		8120507B2E9E57CE005B916E /* BaseballAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BaseballAppTests;
+			sourceTree = "<group>";
+		};
 		817F70F32E8E32F8001CF782 /* BaseballApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BaseballApp;
@@ -25,31 +39,29 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		812050772E9E57CE005B916E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		817F70EE2E8E32F8001CF782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8105CAAE2E963B00000A0917 /* FirebaseCore in Frameworks */,
-				8105CAB02E963B07000A0917 /* FirebaseAuth in Frameworks */,
-				8105CAB22E963B0E000A0917 /* FirebaseFirestore in Frameworks */,
+				812050432E9E17F9005B916E /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8105CAAC2E963B00000A0917 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		817F70E82E8E32F8001CF782 = {
 			isa = PBXGroup;
 			children = (
 				817F70F32E8E32F8001CF782 /* BaseballApp */,
-				8105CAAC2E963B00000A0917 /* Frameworks */,
+				8120507B2E9E57CE005B916E /* BaseballAppTests */,
 				817F70F22E8E32F8001CF782 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				817F70F12E8E32F8001CF782 /* BaseballApp.app */,
+				8120507A2E9E57CE005B916E /* BaseballAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +78,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		812050792E9E57CE005B916E /* BaseballAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 812050802E9E57CE005B916E /* Build configuration list for PBXNativeTarget "BaseballAppTests" */;
+			buildPhases = (
+				812050762E9E57CE005B916E /* Sources */,
+				812050772E9E57CE005B916E /* Frameworks */,
+				812050782E9E57CE005B916E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8120507F2E9E57CE005B916E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8120507B2E9E57CE005B916E /* BaseballAppTests */,
+			);
+			name = BaseballAppTests;
+			packageProductDependencies = (
+			);
+			productName = BaseballAppTests;
+			productReference = 8120507A2E9E57CE005B916E /* BaseballAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		817F70F02E8E32F8001CF782 /* BaseballApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 817F70FC2E8E32FB001CF782 /* Build configuration list for PBXNativeTarget "BaseballApp" */;
@@ -82,9 +118,7 @@
 			);
 			name = BaseballApp;
 			packageProductDependencies = (
-				8105CAAD2E963B00000A0917 /* FirebaseCore */,
-				8105CAAF2E963B07000A0917 /* FirebaseAuth */,
-				8105CAB12E963B0E000A0917 /* FirebaseFirestore */,
+				812050422E9E17F9005B916E /* SQLite */,
 			);
 			productName = BaseballApp;
 			productReference = 817F70F12E8E32F8001CF782 /* BaseballApp.app */;
@@ -100,6 +134,10 @@
 				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
+					812050792E9E57CE005B916E = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = 817F70F02E8E32F8001CF782;
+					};
 					817F70F02E8E32F8001CF782 = {
 						CreatedOnToolsVersion = 26.0.1;
 						LastSwiftMigration = 2600;
@@ -116,7 +154,7 @@
 			mainGroup = 817F70E82E8E32F8001CF782;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				8105CA892E963218000A0917 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				812050412E9E17F9005B916E /* XCRemoteSwiftPackageReference "SQLite.swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 817F70F22E8E32F8001CF782 /* Products */;
@@ -124,11 +162,19 @@
 			projectRoot = "";
 			targets = (
 				817F70F02E8E32F8001CF782 /* BaseballApp */,
+				812050792E9E57CE005B916E /* BaseballAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		812050782E9E57CE005B916E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		817F70EF2E8E32F8001CF782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,6 +185,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		812050762E9E57CE005B916E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		817F70ED2E8E32F8001CF782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,7 +201,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8120507F2E9E57CE005B916E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 817F70F02E8E32F8001CF782 /* BaseballApp */;
+			targetProxy = 8120507E2E9E57CE005B916E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		812050812E9E57CE005B916E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Senior.BaseballAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaseballApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BaseballApp";
+			};
+			name = Debug;
+		};
+		812050822E9E57CE005B916E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Senior.BaseballAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaseballApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BaseballApp";
+			};
+			name = Release;
+		};
 		817F70FA2E8E32FB001CF782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -338,6 +439,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		812050802E9E57CE005B916E /* Build configuration list for PBXNativeTarget "BaseballAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				812050812E9E57CE005B916E /* Debug */,
+				812050822E9E57CE005B916E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		817F70EC2E8E32F8001CF782 /* Build configuration list for PBXProject "BaseballApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -359,31 +469,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8105CA892E963218000A0917 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		812050412E9E17F9005B916E /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 12.4.0;
+				minimumVersion = 0.15.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8105CAAD2E963B00000A0917 /* FirebaseCore */ = {
+		812050422E9E17F9005B916E /* SQLite */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8105CA892E963218000A0917 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseCore;
-		};
-		8105CAAF2E963B07000A0917 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8105CA892E963218000A0917 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		8105CAB12E963B0E000A0917 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8105CA892E963218000A0917 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
+			package = 812050412E9E17F9005B916E /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
